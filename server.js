@@ -9,10 +9,10 @@ var PORT= process.env.PORT || 5000;
 // ================================================================================================
 
 app.use(express.json());
-app.use('/css', express.static(__dirname + '/public/css'));
-app.use('/images', express.static(__dirname + '/public/images'));
-app.use('/js', express.static(__dirname + '/public/js'));
-app.use('/files', express.static(__dirname + '/public/files'));
+app.use('/css', express.static(path.join(__dirname, '/public/css')));
+app.use('/images', express.static(path.join(__dirname, '/public/images')));
+app.use('/js', express.static(path.join(__dirname, '/public/js')));
+app.use('/files', express.static(path.join(__dirname, '/public/files')));
 
 
 
